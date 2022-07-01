@@ -1,0 +1,274 @@
+:root{
+    --texto: #f7f7f7;
+    --link: #f56300;
+    --hover: #f53900;
+    --fondo: #5e3146;
+
+    --dudas2: #4e347c;
+    --dudas: #b5c1aa;
+}
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    /**background-image: url(/img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; **/
+    background-color: var(--fondo);
+    margin: 0;
+}
+a{
+    color: var(--link);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gruppo', cursive;
+    margin: 10px 15px;
+}
+a:hover{
+    color: var(--hover);
+}
+p{
+    color: var(--texto);
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+h1, h2, h3{
+    color: var(--texto);
+    margin: 0;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Bungee Shade', cursive;
+    margin-top: 20px;
+}
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Gruppo', cursive;
+    margin: 10px 15px;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Gruppo', cursive;
+    margin: 10px 15px;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 100px;
+
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    padding: 3px;
+}
+
+header{
+    background-image: url(/img/fondofiesta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    /**position: relative;**/
+}
+.header{
+    /**position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;**/
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+@media (max-width: 425px) {
+    h1{
+        margin-left: 5px;
+        font-size: 50px;
+    }
+    header{
+        
+    }
+}
+
+.artistas{
+    /**background-image: url(/img/fondo-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;**/
+    margin: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 50px;
+    border-radius: 5px;
+}
+.articulos{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.stofuetdo{
+    background-image: url(/img/sto-fue-todo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.zahir{
+    background-image: url(/img/zahir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.art-nombre{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+@media (max-width: 425px) {
+    .artistas h2{
+        text-align: center;
+    }
+    .articulos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .zahir{
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+    }
+    .stofuetdo{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.info{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.info-video{
+    width: 40%;
+}
+.info-text{
+    width: 60%;
+}
+@media (max-width: 425px) {
+    .info{
+        flex-direction: column;
+    }
+    .info-video, .info-text{
+        width: 100%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40%;
+    margin: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.form-titulo{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.form-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+label{
+    color: white;
+    font-family: 'Gruppo', cursive;
+    font-size: 15px;
+}
+button{
+    background-color: rgba(0, 0, 0, .3);
+    color: var(--link);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, .6);
+    color: var(--hover);
+}
+::placeholder{
+    color: white;
+    padding-left: 5px;
+}
+@media (max-width: 425px) {
+    .form{
+        width: 90%;
+    }
+}
+
+.miniplaylist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playlist{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.playlist-video{
+    margin-top: 10px;
+}
+@media (max-width: 425px) {
+    .playlist{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
