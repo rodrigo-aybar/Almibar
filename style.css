@@ -20,6 +20,11 @@ body{
     background-color: var(--fondo);
     margin: 0;
 }
+footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: black;
+}
 a{
     color: var(--link);
     font-size: 15px;
@@ -62,6 +67,11 @@ h3{
     justify-content: center;
     align-items: center;
 }
+.cienxciento{
+    width: 100%;
+}
+
+/**
 .logo{
     width: 100px;
 
@@ -69,6 +79,7 @@ h3{
     mix-blend-mode: multiply;
     padding: 3px;
 }
+**/
 
 header{
     background-image: url(/img/fondofiesta.jpg);
@@ -78,28 +89,28 @@ header{
     background-position: center;
     height: 100vh;
     width: 100%;
-    /**position: relative;**/
+    position: relative;
 }
 .header{
-    /**position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;**/
-    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    /**background-color: rgba(0, 0, 0, .5);**/
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .header-nav{
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
 }
 .navegacion{
     display: flex;
     justify-content: space-between;
+    text-align: center;
     width: 90%;
     margin: 10px;
 }
@@ -250,12 +261,10 @@ button:hover{
         width: 90%;
     }
 }
+
 .login-singip{
     margin-top: 90px;
     background-color: rgba(0, 0, 0, .6);
-}
-.cienxciento{
-    width: 100%;
 }
 @media (max-width: 768px) {
     .login-singip{
@@ -284,6 +293,27 @@ button:hover{
 }
 
 .footer{
-    display: flex;
-    justify-content: center;
+    width: 30%;
+    flex-direction: column;
 }
+.fondo-icono{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 768px) {
+    .footer{
+        width: 50%;
+    }
+}
+@media (max-width: 425px) {
+    .footer{
+        width: 100%;
+    }
+}
+/**.icono{
+    
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    
+}**/
